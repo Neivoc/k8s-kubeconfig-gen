@@ -5,7 +5,7 @@ Herramienta de línea de comandos para extraer tokens de ServiceAccount desde po
 ## Descripción
 
 En escenarios de pentesting, auditoría o administración de clústeres Kubernetes, es común necesitar generar un kubeconfig a partir de las credenciales montadas dentro de un pod. Esta herramienta automatiza ese proceso: 
-- se conecta al pod vía `kubectl exec`, extrae el token, el certificado CA y el namespace desde `/var/run/secrets/kubernetes.io/serviceaccount/`, y genera un kubeconfig funcional con permisos seguros (600).
+- Se conecta al pod vía `kubectl exec`, extrae el token, el certificado CA y el namespace desde `/var/run/secrets/kubernetes.io/serviceaccount/`, y genera un kubeconfig funcional con permisos seguros (600).
 
 - También soporta un modo manual donde se construye el kubeconfig a partir de archivos de token y CA ya existentes, sin necesidad de acceso directo al pod.
 
