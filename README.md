@@ -52,7 +52,7 @@ python3 k8s-kubeconfig-gen.py -t <token-file> -a <api-server> [-c <ca.crt>] [-n 
 | Parámetro | Descripción |
 |-----------|-------------|
 | `-k` | Ruta al kubeconfig actual (modo pod) |
-| `-n` | Namespace del pod o del ServiceAccount |
+| `-n` | Namespace del ServiceAccount |
 | `-p` | Nombre del pod (modo pod) |
 | `-t` | Ruta al archivo con el token (modo manual) |
 | `-c` | Ruta al archivo CA certificate (modo manual, opcional) |
